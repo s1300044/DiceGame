@@ -1,7 +1,7 @@
 # DiceGame
 include<stdio.h>
 include<stdlib.h>
-main(){
+int main(){
 int sum=0;
 char name[10];
 printf("What is your name?\n");
