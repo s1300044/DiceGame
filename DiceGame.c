@@ -1,11 +1,18 @@
 # DiceGame
+include<stdio.h>
+include<stdlib.h>
 main(){
-int sum;
-int A[5]={1,2,3,4,5,6};
-printf("Rolling dice");
-for(int i=0;i<2;i++){
-printf("Die %d:%d,i,A[5]);
-sum+=A[i];
+int sum=0;
+char name[10];
+printf("What is your name?\n");
+scanf("%s",&name);
+printf("Hello, %s!\nRolling dice...\n",name);
+for(int i=1;i<3;i++){
+int n;
+n=rand()%6+1;
+printf("Die %d:%d\n",i,n);
+sum+=n;
 }
-printf("Total value;%d")
+printf("Total value:%d\n",sum);
+printf("%s won!\n",name);
 }
